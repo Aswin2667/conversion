@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <h1>CM TO INCHES</h1>
+        <div class="tx">
+            <input type="text" id="fr"><br>
+            <button id="btn" onclick="script.script()"type="submit" >Convert to Inches</button>
+        </div>
+        <div id="result"></div>
+        <script>
+            function find(){
+                let a = (document.getElementById("fr").value)
+    let ans= a/2.54
+    let result = document.getElementById("result")
+    result.innerHTML=ans.toFixed(3)+" Inches"
+            }
+        </script>
+    </div>
+</body>
+</html>
